@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Add product</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+        <h4>Add Product</h4>
+        <form method="post" action="/products/save">
+          <div class="form-group">
+            <label for="item">Product Name</label>
+            <input type="text" class="form-control" id="name" name="name">
+          </div>
+          <div class="form-group">
+            <label for="item">Product Price</label>
+            <input type="text" class="form-control" id="price" name="price">
+          </div>
+          <button type="submit" class="btn btn-primary">Save this product</button>
+        </form>
+    </div>
+  </body>
+</html>
