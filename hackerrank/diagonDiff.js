@@ -27,13 +27,10 @@ function readLine() {
 // Complete the diagonalDifference function below.
 function diagonalDifference(arr) {
     let diff = 0;
-
-    for(let i = 0 ; i < arr.length ; i++){
-        for(let j = arr.length - 1; j >= 0; j--){
-            diff += arr[i] - arr[j];
-        }
+    for(let i = 0 , j = arr.length - 1; i < arr.length ; i++, j--){
+        diff += arr[i][i] - arr[j][i]; 
     }
-    return diff;
+    return Math.abs(diff);
 }
 
 function main() {
